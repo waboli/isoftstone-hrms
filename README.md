@@ -32,7 +32,7 @@ isoftstone-hrms作为一个种子项目，你可以基于它，快速搭建项�
 ### 怎么使用本项目 ###
 
 1. git clone git@github.com:waboli/isoftstone-hrms.git
-2. 在MySQL中导入 isoftstone-hrms/src/main/resources/test.sql 脚本
+2. 在MySQL中导入 isoftstone-hrms/src/main/resources/user_info.sql 脚本
 3. 更新 isoftstone-hrms/src/main/resources/application.yml 中username和password的值
 4. cd isoftstone-hrms
 5. mvn war:war
