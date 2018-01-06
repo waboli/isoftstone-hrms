@@ -1,0 +1,13 @@
+spring:
+    profiles:
+        active: dev
+
+mybatis:
+    mapperLocations: classpath:mapper/*.xml
+    typeAliasesPackage: com.isoftstone.hrms.model
+
+logging:
+  level:
+    org.springframework.web: INFO
+    com.isoftstone.hrms: DEBUG
+
