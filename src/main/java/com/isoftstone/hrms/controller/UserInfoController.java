@@ -1,7 +1,7 @@
 /*
  * The MIT License (MIT)
  *
- * Copyright (c) 2014 waboli@126.com
+ * Copyright (c) 2018 waboli@126.com
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -24,6 +24,8 @@
 
 package com.isoftstone.hrms.controller;
 
+import com.isoftstone.hrms.common.resp.ResponseHelper;
+import com.isoftstone.hrms.common.resp.ServiceResponse;
 import com.isoftstone.hrms.model.UserInfo;
 import com.isoftstone.hrms.service.UserInfoService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -37,14 +39,14 @@ import java.util.List;
  * @author zhanhuanhuan
  */
 @RestController
-@RequestMapping("/user")
+@RequestMapping("/users")
 public class UserInfoController {
 
     @Autowired
     private UserInfoService userInfoService;
 
-    @RequestMapping(value = "/all", method = RequestMethod.GET)
-    public List<UserInfo> main() {
-        return  userInfoService.selectAll();
+    @RequestMapping(method = RequestMethod.GET)
+    public ServiceResponse<List<UserInfo>> getUsersList() {
+        return ResponseHelper.OK(userInfoService.selectAll());
     }
 }

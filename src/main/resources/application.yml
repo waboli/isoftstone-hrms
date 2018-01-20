@@ -8,7 +8,7 @@ mybatis:
 
 logging:
   level:
-    org.springframework.web: ERROR
+    org.springframework.web: INFO
     com.isoftstone.hrms: DEBUG
   pattern:
     console: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"

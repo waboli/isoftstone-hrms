@@ -35,7 +35,7 @@ isoftstone-hrms作为一个种子项目，你可以基于它，快速搭建项�
 2. 在MySQL中导入 isoftstone-hrms/src/main/resources/user_info.sql 脚本
 3. 更新 isoftstone-hrms/src/main/resources/application.yml 中username和password的值
 4. cd isoftstone-hrms
-5. mvn war:war
+5. mvn clean package
 6. 使用命令java -jar isoftstone-hrms-1.0-SNAPSHOT.war直接启动war包
 
 ### 在IDE 中查看源码并运行 ###
